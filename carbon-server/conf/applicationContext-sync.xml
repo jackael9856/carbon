@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:lang="http://www.springframework.org/schema/lang" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:util="http://www.springframework.org/schema/util" xmlns:weibo="http://api.weibo.com/schema/weibo"
+	xmlns:motan="http://api.weibo.com/schema/motan"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+       http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.5.xsd
+       http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-2.5.xsd
+       http://www.springframework.org/schema/lang http://www.springframework.org/schema/lang/spring-lang-2.5.xsd
+       http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.5.xsd
+       http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-2.5.xsd
+       http://api.weibo.com/schema/weibo http://api.weibo.com/schema/weibo.xsd
+       http://api.weibo.com/schema/motan http://api.weibo.com/schema/motan.xsd ">
+
+	<import resource="classpath:spring/configloader.xml" />
+	<import resource="classpath:spring/counter.xml" />
+	<import resource="classpath:spring/user_client.xml" />
+	<import resource="classpath:spring/auth.xml" />
+	<import resource="classpath:spring/tauth2.xml" />
+	<import resource="classpath:spring/cedrus.xml" />
+	<import resource="classpath:spring/notice-service.xml" />
+	<import resource="classpath:spring/remind-service-profile.xml" />
+	<import resource="classpath:spring/appinfo-service.xml" />
+	<import resource="classpath:spring/profile.xml" />
+	
+	<import resource="classpath:spring/remind-sync-read.xml" />
+	
+</beans>
